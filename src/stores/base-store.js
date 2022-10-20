@@ -27,7 +27,7 @@ export const init = () => {
         const { account_list, loginid } = response.authorize;
 
         setLoginInformation({
-          accounts: account_list,
+          accounts: JSON.stringify(account_list),
           active_loginid: loginid,
           is_logged_in: true,
         });
